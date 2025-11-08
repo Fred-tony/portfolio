@@ -11,7 +11,89 @@
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
   */
+/*=============== RESPONSIVE GLOBAL ===============*/
 
+/* Ajustement des grilles principales */
+@media screen and (max-width: 992px) {
+  .projects__content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .skills__content {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Petits écrans (téléphones) */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .profile__info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .profile__buttons {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .filters__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__carousel {
+    height: 160px;
+  }
+
+  .skills__bar {
+    width: 100%;
+  }
+
+  .skills__name {
+    font-size: 0.85rem;
+  }
+
+  .footer__copy {
+    font-size: 0.7rem;
+  }
+}
+
+/* Tablettes moyennes */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .projects__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .profile__bio {
+    max-width: 90%;
+  }
+}
+
+/* Très petits écrans (moins de 380px) */
+@media screen and (max-width: 380px) {
+  .profile__border {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile__name {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.85rem 1.2rem;
+  }
+}
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
