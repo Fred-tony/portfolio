@@ -279,7 +279,7 @@ body.dark-theme {
 }
 
 .profile__bio {
-  max-width: 360px; /* augmenté de 260px -> 360px */
+  max-width: 252px; /* réduit de 30% (360px * 0.7 ≈ 252px) */
   margin: 0.5rem auto 0.75rem;
   font-size: .9rem;
   color: var(--text-color);
@@ -291,7 +291,7 @@ body.dark-theme {
 /* Grand écran : bio encore plus large */
 @media (min-width: 992px) {
   .profile__bio {
-    max-width: 520px;
+    max-width: 364px; /* réduit de 30% (520px * 0.7 ≈ 364px) */
     font-size: 1rem;
   }
 }
